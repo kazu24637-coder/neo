@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buy the NexRide Liner - Detachable, washable, and sweat-absorbing inner lining for helmets with a 4-point Velcro system.">
-    <title>NexRide Liner | Our Product</title>
+    <meta name="description" content="Buy the F&C RIDE Liner - Detachable, washable, and sweat-absorbing inner lining for helmets with a 4-point Velcro system.">
+    <title>F&C RIDE Liner | Our Product</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 <body>
     <header class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Nex<span>Ride</span></a>
+            <a href="index.html" class="logo">F&C <span>RIDE</span></a>
             
             <button class="hamburger-menu" aria-label="Toggle Navigation">
                 <i class="fas fa-bars"></i>
@@ -47,12 +47,12 @@
                 
                 <div class="product-details">
                     <span class="badge bestseller-badge"><i class="fas fa-star"></i> Bestseller</span>
-                    <h1 class="product-title">NexRide Liner</h1>
+                    <h1 class="product-title">F&C RIDE Liner</h1>
                     
                     <div class="pricing">
-                        <span class="current-price">₹299</span>
+                        <span class="current-price">₹249</span>
                         <span class="original-price">₹499</span>
-                        <span class="discount-tag">Save ₹200</span>
+                        <span class="discount-tag">Save ₹250</span>
                     </div>
                     
                     <p class="product-description">
@@ -92,7 +92,7 @@
     <footer>
         <div class="container footer-container">
             <div class="footer-info">
-                <h2>NexRide</h2>
+                <h2>F&C RIDE</h2>
                 <p>Revolutionizing rider comfort and hygiene.</p>
             </div>
             <div class="footer-links">
@@ -104,10 +104,17 @@
                         <li><a href="product.html">Our Product</a></li>
                     </ul>
                 </div>
+                <div class="footer-col" style="margin-left: 2rem;">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="mailto:support@fandcride.com"><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--clr-orange-primary);"></i> support@fandcride.com</a></li>
+                        <li><a href="https://maps.app.goo.gl/EowpxqXuUK782P7DA" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--clr-orange-primary);"></i> Store Location</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 NexRide Liner. All rights reserved.</p>
+            <p>&copy; 2026 F&C RIDE Liner. All rights reserved.</p>
         </div>
     </footer>
 
@@ -120,13 +127,91 @@
             <div class="cart-item-preview">
                 <div class="preview-img"><i class="fas fa-helmet-safety"></i></div>
                 <div class="preview-text">
-                    <h4>NexRide Helmet Liner</h4>
-                    <p>₹299</p>
+                    <h4>F&C RIDE Helmet Liner</h4>
+                    <p>₹249</p>
                 </div>
             </div>
             <div class="cart-actions">
                 <button id="continueShopping" class="btn btn-outline">Continue Shopping</button>
-                <button class="btn btn-cta">Checkout Now</button>
+                <button id="checkoutBtn" class="btn btn-cta">Checkout Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sandbox Payment Gateway Simulator -->
+    <div id="paymentOverlay" class="cart-overlay">
+        <div class="cart-popup payment-popup" style="max-width: 420px; text-align: left; background: #fff;">
+            <button id="closePaymentBtn" class="close-btn"><i class="fas fa-times"></i></button>
+            <div id="paymentFormContainer">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <i class="fas fa-shield-halved" style="font-size: 2.5rem; color: var(--clr-navy-primary); margin-bottom: 0.5rem;"></i>
+                    <h2>Secure Checkout</h2>
+                    <p style="color: var(--clr-orange-primary); font-size: 0.9rem; font-weight: 600;">Sandbox Test Mode</p>
+                </div>
+                
+                <form id="dummyPaymentForm">
+                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem;" id="paymentMethodToggle">
+                        <label class="payment-method-label active" style="flex: 1; border: 2px solid var(--clr-orange-primary); padding: 0.75rem; border-radius: var(--radius-sm); text-align: center; cursor: pointer; background: var(--clr-orange-light); transition: all 0.2s;">
+                            <input type="radio" name="paymentMode" value="card" checked style="display: none;">
+                            <i class="far fa-credit-card" style="color: var(--clr-orange-primary); margin-bottom: 0.25rem; font-size: 1.25rem; display: block;"></i> <span style="font-weight: 600; color: var(--clr-navy-dark);">Card</span>
+                        </label>
+                        <label class="payment-method-label" style="flex: 1; border: 2px solid #cbd5e1; padding: 0.75rem; border-radius: var(--radius-sm); text-align: center; cursor: pointer; background: #fff; transition: all 0.2s;">
+                            <input type="radio" name="paymentMode" value="upi" style="display: none;">
+                            <i class="fas fa-qrcode" style="color: var(--clr-slate-text); margin-bottom: 0.25rem; font-size: 1.25rem; display: block;"></i> <span style="font-weight: 600; color: var(--clr-slate-text);">UPI</span>
+                        </label>
+                        <label class="payment-method-label" style="flex: 1; border: 2px solid #cbd5e1; padding: 0.75rem; border-radius: var(--radius-sm); text-align: center; cursor: pointer; background: #fff; transition: all 0.2s;">
+                            <input type="radio" name="paymentMode" value="cod" style="display: none;">
+                            <i class="fas fa-money-bill-wave" style="color: var(--clr-slate-text); margin-bottom: 0.25rem; font-size: 1.25rem; display: block;"></i> <span style="font-weight: 600; color: var(--clr-slate-text);">COD</span>
+                        </label>
+                    </div>
+
+                    <div id="cardDetailsSection">
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 500;">Card Number (Enter any number)</label>
+                            <div style="position: relative;">
+                                <i class="far fa-credit-card" style="position: absolute; left: 14px; top: 16px; color: var(--clr-slate-light);"></i>
+                                <input type="text" placeholder="0000 0000 0000 0000" maxlength="19" required style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.5rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 500;">Expiry Date</label>
+                                <input type="text" placeholder="MM/YY" maxlength="5" required style="width: 100%; padding: 0.85rem 1rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 500;">CVV</label>
+                                <input type="password" placeholder="123" maxlength="4" required style="width: 100%; padding: 0.85rem 1rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="upiDetailsSection" style="display: none; margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 500;">Enter your UPI ID</label>
+                        <div style="position: relative;">
+                            <i class="fas fa-at" style="position: absolute; left: 14px; top: 16px; color: var(--clr-slate-light);"></i>
+                            <input type="text" placeholder="example@upi" style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.5rem; border: 1px solid #cbd5e1; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--clr-slate-text); margin-top: 0.5rem;">Pay securely using Google Pay, PhonePe, Paytm, or any UPI app.</p>
+                    </div>
+                    <div id="codDetailsSection" style="display: none; text-align: center; margin-bottom: 1.5rem; padding: 1.5rem; background: var(--clr-bg-light); border-radius: var(--radius-sm); border: 1px dashed #cbd5e1;">
+                        <i class="fas fa-truck" style="font-size: 2rem; color: var(--clr-slate-light); margin-bottom: 1rem;"></i>
+                        <p style="color: var(--clr-navy-dark); font-weight: 500; margin-bottom: 0.25rem;">Pay with cash upon delivery</p>
+                        <p style="font-size: 0.85rem; color: var(--clr-slate-text);">Please keep exact change ready to avoid delays.</p>
+                    </div>
+                    
+                    <button type="submit" id="submitPaymentBtn" class="btn btn-cta btn-block" style="padding: 1rem; font-size: 1.1rem; justify-content: center;">
+                        <i class="fas fa-lock" id="submitBtnIcon"></i> <span id="submitBtnText">Pay ₹249</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success Message Container -->
+            <div id="paymentSuccess" style="display: none; text-align: center; padding: 2rem 0;">
+                <i class="fas fa-check-circle" style="font-size: 5rem; color: #10b981; margin-bottom: 1.5rem;"></i>
+                <h2 style="margin-bottom: 0.5rem; color: var(--clr-navy-dark);">Payment Successful!</h2>
+                <p style="color: var(--clr-slate-text); margin-bottom: 2rem;">Order #NEX-8429 placed successfully.</p>
+                <a href="index.html" class="btn btn-outline btn-block" style="justify-content: center;">Return to Home</a>
             </div>
         </div>
     </div>
