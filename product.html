@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy the NexRide Liner - Detachable, washable, and sweat-absorbing inner lining for helmets with a 4-point Velcro system.">
+    <title>NexRide Liner | Our Product</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Nex<span>Ride</span></a>
+            
+            <button class="hamburger-menu" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="product.html" class="active">Our Product</a>
+                <a href="product.html" class="btn btn-cta btn-nav">Buy Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="product-showcase">
+            <div class="container product-container">
+                <div class="product-gallery">
+                    <div class="image-placeholder large-placeholder">
+                        <i class="fas fa-helmet-safety"></i>
+                        <span>Product Image Placeholder</span>
+                    </div>
+                </div>
+                
+                <div class="product-details">
+                    <span class="badge bestseller-badge"><i class="fas fa-star"></i> Bestseller</span>
+                    <h1 class="product-title">NexRide Liner</h1>
+                    
+                    <div class="pricing">
+                        <span class="current-price">₹299</span>
+                        <span class="original-price">₹499</span>
+                        <span class="discount-tag">Save ₹200</span>
+                    </div>
+                    
+                    <p class="product-description">
+                        An ergonomic, U-shape helmet insert designed for peak performance and hygiene. Featuring a soft inner cloth for optimal hair protection and a secure 4-point Velcro attach system.
+                    </p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Sweat-Absorbing:</strong> Wick away moisture rapidly.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Hair Protection:</strong> Reduces friction and flattening.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Zero-Slip Fit:</strong> 4-point Velcro keeps it secure.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Washable:</strong> Easy to detach and clean.</li>
+                    </ul>
+                    
+                    <button id="addToCartBtn" class="btn btn-cta btn-block btn-massive">
+                        <i class="fas fa-cart-shopping"></i> Add to Cart
+                    </button>
+                    
+                    <div class="trust-signals">
+                        <div class="signal">
+                            <i class="fas fa-truck-fast"></i>
+                            <span>Fast Delivery</span>
+                        </div>
+                        <div class="signal">
+                            <i class="fas fa-rotate-left"></i>
+                            <span>7-Day Returns</span>
+                        </div>
+                        <div class="signal">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Quality Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h2>NexRide</h2>
+                <p>Revolutionizing rider comfort and hygiene.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Our Product</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NexRide Liner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Overlay -->
+    <div id="cartOverlay" class="cart-overlay">
+        <div class="cart-popup">
+            <button id="closeCartBtn" class="close-btn"><i class="fas fa-times"></i></button>
+            <div class="cart-icon-success"><i class="fas fa-check-circle"></i></div>
+            <h2>Item Added to Cart!</h2>
+            <div class="cart-item-preview">
+                <div class="preview-img"><i class="fas fa-helmet-safety"></i></div>
+                <div class="preview-text">
+                    <h4>NexRide Helmet Liner</h4>
+                    <p>₹299</p>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button id="continueShopping" class="btn btn-outline">Continue Shopping</button>
+                <button class="btn btn-cta">Checkout Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
